@@ -7,4 +7,56 @@
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+ 
+  <servlet> 
+  <servlet-name> ReadCustomer</servlet-name>
+  <servlet-class> com.sample.CustomersDataRead</servlet-class>
+   </servlet>
+  
+   <servlet> 
+  <servlet-name> CreateCustomer</servlet-name>
+  <servlet-class> com.sample.CustomersDataCreate</servlet-class>
+   </servlet>
+  
+  
+  
+  <servlet> 
+  <servlet-name> UpdateCustomer</servlet-name>
+  <servlet-class> com.sample.CustomersDataUpdate</servlet-class>
+  
+  </servlet>
+  
+  
+  
+  <servlet> 
+  <servlet-name> DeleteCustomer</servlet-name>
+  <servlet-class> com.sample.CustomersDataDelete</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name> ReadCustomer </servlet-name>
+  <url-pattern> /read</url-pattern>
+  
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name> CreateCustomer </servlet-name>
+  <url-pattern> /create</url-pattern>
+  
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name> UpdateCustomer </servlet-name>
+  <url-pattern> /update</url-pattern>
+  
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name> DeleteCustomer </servlet-name>
+  <url-pattern> /delete</url-pattern>
+  
+  </servlet-mapping>
+  
+  
 </web-app>

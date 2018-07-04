@@ -129,7 +129,7 @@ $(document).ready(function(){
 function getDataForEdit(buttonId) {	
 	
 	
-	$.getJSON("/hello?axn=listSingle&uuid="+buttonId, function(data) {
+	$.getJSON("/read?axn=listSingle&uuid="+buttonId, function(data) {
 							
 		
 		username = data.username;				
@@ -250,7 +250,7 @@ function deleteData(uuid) {
 		        	
 		        $.ajax({
 		            type        : 'DELETE', 
-		            url         : '/hello', 
+		            url         : '/delete', 
 		            data        :  formData,		            
 		            contentType: 'application/json; charset=utf-8',     //this is for request type
 		            encode      : true
@@ -290,7 +290,7 @@ function formAxn()
 
 	function getList() {	
 				
-		$.getJSON("/hello?axn=list", function(data) {
+		$.getJSON("/read?axn=list", function(data) {
 			var customer_data = "";
 			
 			$.each(data, function(key, value) {	
@@ -360,7 +360,7 @@ function formAxn()
 		       		        		        	
 		        $.ajax({
 		            type        : 'POST', 
-		            url         : '/hello', 
+		            url         : '/create', 
 		            data        :  jsonFormDataStr,		            
 		            contentType: 'application/json',     //this is for request type
 		            encode      : true
@@ -423,7 +423,7 @@ function formAxn()
         	
         $.ajax({
             type        : 'PUT', 
-            url         : '/hello', 
+            url         : '/update', 
             data        :  jsonFormDataStr,            
             contentType: 'application/json; charset=utf-8',     //this is for request type
             encode      : true

@@ -74,19 +74,7 @@ public void setLastUpdated(String lastUpdated) {
 	this.lastUpdated = lastUpdated;
 	
 }
-/*public List getMobiles() {
-	return mobiles;
-}
-public void setMobiles(ArrayList<String> mobileNumbers) {
-	this.mobiles = mobileNumbers;
-}
-public List getLandlines() { 
-	return landlines;
-	
-}
-public void setLandlines(ArrayList<String> landlineNumbers) {
-	this.landlines =landlineNumbers;
-}*/
+
 
 public HashMap<String, Map<String, String>> getPhones()
 {
@@ -97,6 +85,9 @@ public void setPhones(HashMap<String, Map<String, String>> phones)
 {
 	this.phones = phones;
 }
+
+
+
 
 
 }
