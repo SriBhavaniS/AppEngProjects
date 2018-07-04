@@ -1,0 +1,93 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>Contact Management System</title>
+
+<script src="jquery-1.11.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="jquery.serializejson.js"></script>
+<script src="Validation.js"></script>
+<script src="customer.js"></script>	
+
+
+
+
+</head>
+
+   
+
+
+
+	<body onload='getList();'>
+	
+	
+	<h3>Contact Management System</h3>
+	
+
+ 
+
+
+	
+<form name="myform">
+
+<div>
+			Name  <input id='usernametxt' type="text" name='username'> <br>
+          	Email id <input id='emailidtxt' type="text" name='emailid'>  <br> 
+		  	<input id='uuidhidden' type='hidden' name='uuid'> <br>	  
+		    
+		
+			
+				<div class="phone-list">
+				
+					<div class="input-group phone-input">
+							Select Type <select id="changeType">
+								<option value="phone">Phone</option>
+								<option value="fax">Fax</option>
+								<option value="mobile">Mobile</option>
+							</select>
+						
+						<input type="hidden" name="phones[1][type]" class="type-input" value="phone" />
+						<input type="text" name="phones[1][number]" class="form-control" placeholder="" />
+					</div>
+					
+				</div>
+				
+				
+				
+				
+				<button type="button" name="btn-add-phone">Add Phone</button>
+			
+			
+		
+		
+	
+  
+
+		  
+		
+		
+		
+		<button id='postButton' name='submit'>Submit</button>
+ 		
+		<table id="customers_table" border="1">
+		<tr>
+			
+			<th>Name</th>
+			<th>Email id</th>
+			<th>Created Date</th>
+			<th>Last Updated </th>
+			<th>Phone Number & Type</th>			
+			<th></th>
+			<th></th>
+			
+		</tr>
+	</table>
+		
+
+
+	</form> 
+</body>
+
+</html>
